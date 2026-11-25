@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ярослав Храбатин — Моє професійне вебпортфоліо</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero" id="home">
+        <img class="photo" src="images/photo.jpg" alt="Фото Ярослава Храбатина">
+        <h1>Ярослав Храбатин</h1>
+        <p class="role">Майбутній веброзробник</p>
+        <ul class="checklist">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Git</li>
+            <li>GitHub</li>
+        </ul>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#about">Про мене</a></li>
+            <li><a href="#skills">Навички</a></li>
+            <li><a href="#projects">Проєкти</a></li>
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="block">
+            <h2>Про мене</h2>
+            <p>Я студент ІТ-спеціальності, який уже зараз будує <strong>основу майбутньої кар’єри</strong>. Вивчаю веброзробку та розвиваю навички самостійного пошуку рішень.</p>
+            <p>Мої інтереси: веброзробка, системи контролю версій, основи кібербезпеки та проєктування зручних інтерфейсів.</p>
+        </section>
+
+        <div class="cards">
+            <article class="card">
+                <h3>Навички</h3>
+                <p>HTML, CSS, Git, GitHub, Google Workspace, Figma.</p>
+                <a class="more" href="#skills">Детальніше</a>
+            </article>
+            <article class="card">
+                <h3>Проєкти</h3>
+                <p>Вебпортфоліо, анкета користувача, форма зворотного зв’язку.</p>
+                <a class="more" href="#projects">Детальніше</a>
+            </article>
+            <article class="card">
+                <h3>Освіта</h3>
+                <p>Навчаюсь за ІТ-спеціальністю, вивчаю основи веброзробки.</p>
+                <a class="more" href="#education">Детальніше</a>
+            </article>
+        </div>
+
+        <section id="skills" class="block">
+            <h2>Навички</h2>
+            <table class="skills-table">
+                <caption>Рівень володіння технологіями</caption>
+                <thead>
+                    <tr>
+                        <th>Технологія</th>
+                        <th>Рівень володіння</th>
+                        <th>Де використовувалась</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Високий</td>
+                        <td>Лабораторні роботи, вебпортфоліо</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Середній</td>
+                        <td>Оформлення вебпортфоліо</td>
+                    </tr>
+                    <tr>
+                        <td>Git</td>
+                        <td>Середній</td>
+                        <td>Збереження версій проєкту</td>
+                    </tr>
+                    <tr>
+                        <td>GitHub</td>
+                        <td>Середній</td>
+                        <td>Публікація сайту на GitHub Pages</td>
+                    </tr>
+                    <tr>
+                        <td>Google Workspace</td>
+                        <td>Високий</td>
+                        <td>Спільна робота з документами</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="projects" class="block">
+            <h2>Проєкти</h2>
+            <div class="projects">
+                <article class="project">
+                    <h3>Вебпортфоліо</h3>
+                    <p>Наскрізний проєкт: HTML-структура, CSS-оформлення, списки, таблиці, форми та навігація на Flexbox.</p>
+                    <span class="tag">HTML</span> <span class="tag">CSS</span>
+                </article>
+                <article class="project">
+                    <h3>Анкета користувача</h3>
+                    <p>Форма з табличним компонуванням: текстові поля, прапорці, списки та перемикачі.</p>
+                    <span class="tag">Форми</span> <span class="tag">Таблиці</span>
+                    <p><a class="more" href="../../lab9/variant1/">Переглянути</a></p>
+                </article>
+                <article class="project">
+                    <h3>Лабораторні роботи</h3>
+                    <p>Усі етапи навчального курсу з веброзробки зберігаються в репозиторії на GitHub.</p>
+                    <span class="tag">Git</span> <span class="tag">GitHub</span>
+                    <p><a class="more" href="https://github.com/Chagarock1/Portfolio">Репозиторій</a></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="education" class="block">
+            <h2>Освіта</h2>
+            <ul>
+                <li>Навчання за ІТ-спеціальністю;</li>
+                <li>курс «Інформаційна мережа Інтернет»: HTML, CSS, форми, Flexbox;</li>
+                <li>самостійне вивчення Git, GitHub та Google Workspace.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="block">
+            <h2>Контакти</h2>
+            <form class="feedback" action="#" method="get">
+                <fieldset>
+                    <legend>Зворотний зв’язок</legend>
+                    <div class="row">
+                        <label for="fb-name">Ім’я</label>
+                        <input type="text" id="fb-name" name="name" placeholder="Ваше ім’я" required>
+                    </div>
+                    <div class="row">
+                        <label for="fb-email">Email</label>
+                        <input type="email" id="fb-email" name="email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="row">
+                        <label for="fb-topic">Тема</label>
+                        <select id="fb-topic" name="topic">
+                            <option value="cooperation">Співпраця</option>
+                            <option value="project">Питання щодо проєкту</option>
+                            <option value="other">Інше</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="fb-message">Повідомлення</label>
+                        <textarea id="fb-message" name="message" rows="4" placeholder="Напишіть ваше повідомлення" required></textarea>
+                    </div>
+                </fieldset>
+                <div class="actions">
+                    <button type="submit">Надіслати</button>
+                    <button type="reset" class="secondary">Очистити</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Ярослав Храбатин · Етап 5: навігація та Flexbox</p>
+    </footer>
+</body>
+</html>
