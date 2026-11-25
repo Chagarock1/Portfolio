@@ -1,0 +1,43 @@
+body {
+    font-family: "Comic Sans MS", "Comic Neue", cursive;
+    font-size: 14px;
+    color: #003300;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    color: #003300;
+}
+
+.survey {
+    width: 440px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 2px;
+    background-color: #ccffcc;
+}
+
+.survey th {
+    background-color: #00cc33;
+    padding: 6px;
+    text-align: center;
+}
+
+.survey td {
+    width: 50%;
+    padding: 6px;
+    vertical-align: top;
+}
+
+.survey td.buttons {
+    background-color: #006633;
+    text-align: center;
+    padding: 6px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 170px;
+    margin-bottom: 4px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета користувача</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Анкета користувача</h1>
+
+    <form action="#" method="get">
+        <table class="survey">
+            <tr>
+                <th>Особисті дані</th>
+                <th>Захоплення</th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Ваше ім'я:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="password">Ваш пароль:</label><br>
+                    <input type="password" id="password" name="password"><br>
+                    <label for="photo">Ваше фото:</label><br>
+                    <input type="file" id="photo" name="photo">
+                </td>
+                <td>
+                    <label><input type="checkbox" name="hobby" value="it" checked> Комп'ютери та Інтернет</label><br>
+                    <label><input type="checkbox" name="hobby" value="art"> Література та мистецтво</label><br>
+                    <label><input type="checkbox" name="hobby" value="music"> Музика</label><br>
+                    <label><input type="checkbox" name="hobby" value="cars"> Автомобілі</label><br>
+                    <label><input type="checkbox" name="hobby" value="sport"> Спорт та активний відпочинок</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Місце проживання</th>
+                <th>Коментарі</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="city" size="5">
+                        <option value="">---Виберіть місто---</option>
+                        <option value="kyiv">Київ</option>
+                        <option value="lutsk">Луцьк</option>
+                        <option value="lviv">Львів</option>
+                        <option value="odesa">Одеса</option>
+                        <option value="kharkiv">Харків</option>
+                    </select>
+                    <br><br><br>
+                    <select name="country">
+                        <option value="">---Виберіть країну---</option>
+                        <option value="ua">Україна</option>
+                        <option value="pl">Польща</option>
+                        <option value="other">Інша</option>
+                    </select>
+                </td>
+                <td>
+                    <textarea name="comments" rows="5" cols="30"></textarea><br><br>
+                    <label><input type="radio" name="visit" value="first" checked> Я вперше на сторінці</label><br>
+                    <label><input type="radio" name="visit" value="again"> Я тут не вперше</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="buttons">
+                    <button type="submit">Надіслати</button>
+                    <button type="reset">Очистити</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

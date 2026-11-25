@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ярослав Храбатин — Моє професійне вебпортфоліо</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <img class="photo" src="images/photo.jpg" alt="Фото Ярослава Храбатина">
+        <h1>Ярослав Храбатин</h1>
+        <p class="role">Майбутній веброзробник</p>
+        <ul class="checklist">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Git</li>
+            <li>GitHub</li>
+        </ul>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#about">Про мене</a></li>
+            <li><a href="#skills">Мої навички</a></li>
+            <li><a href="#competencies">Компетентності</a></li>
+            <li><a href="#interests">Інтереси</a></li>
+            <li><a href="#goals">Мої цілі</a></li>
+            <li><a href="#contact">Зворотний зв’язок</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="block">
+            <h2>Про мене</h2>
+            <p>Я студент ІТ-спеціальності, який уже зараз будує <strong>основу майбутньої кар’єри</strong>. Вивчаю веброзробку та розвиваю навички самостійного пошуку рішень.</p>
+            <p>Цей сайт — другий етап наскрізного проєкту «Моє професійне вебпортфоліо»: тут з’явилися списки, зображення та навігація.</p>
+        </section>
+
+        <section id="skills" class="block">
+            <h2>Мої навички</h2>
+            <div class="two-columns">
+                <div>
+                    <h3>Технології, якими користуюсь</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Google Workspace</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Порядок опанування</h3>
+                    <ol>
+                        <li>HTML — структура сторінки</li>
+                        <li>CSS — оформлення</li>
+                        <li>Git і GitHub — контроль версій</li>
+                        <li>JavaScript — інтерактивність</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="competencies" class="block">
+            <h2>Мої професійні компетентності</h2>
+            <table class="skills-table">
+                <caption>Рівень володіння технологіями</caption>
+                <thead>
+                    <tr>
+                        <th>Технологія</th>
+                        <th>Рівень володіння</th>
+                        <th>Де використовувалась</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Високий</td>
+                        <td>Лабораторні роботи, вебпортфоліо</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Середній</td>
+                        <td>Оформлення вебпортфоліо</td>
+                    </tr>
+                    <tr>
+                        <td>Git</td>
+                        <td>Середній</td>
+                        <td>Збереження версій проєкту</td>
+                    </tr>
+                    <tr>
+                        <td>GitHub</td>
+                        <td>Середній</td>
+                        <td>Публікація сайту на GitHub Pages</td>
+                    </tr>
+                    <tr>
+                        <td>Google Workspace</td>
+                        <td>Високий</td>
+                        <td>Спільна робота з документами</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="interests" class="block">
+            <h2>Професійні інтереси</h2>
+            <ul>
+                <li>веброзробка (HTML, CSS, JavaScript);</li>
+                <li>системи контролю версій;</li>
+                <li>основи кібербезпеки;</li>
+                <li>проєктування зручних інтерфейсів.</li>
+            </ul>
+        </section>
+
+        <section id="goals" class="block">
+            <h2>Мої цілі</h2>
+            <img class="wide" src="images/goals.jpg" alt="Фрагмент HTML-коду на темному тлі">
+            <ol>
+                <li>Опанувати HTML і CSS та створити власне портфоліо.</li>
+                <li>Вивчити JavaScript та основи роботи з Git.</li>
+                <li>Взяти участь у навчальних і практичних проєктах.</li>
+                <li>Стати <mark>кваліфікованим веброзробником</mark>.</li>
+            </ol>
+        </section>
+
+        <section id="contact" class="block">
+            <h2>Зворотний зв’язок</h2>
+            <form class="feedback" action="#" method="get">
+                <fieldset>
+                    <legend>Контактні дані</legend>
+                    <div class="row">
+                        <label for="fb-name">Ім’я</label>
+                        <input type="text" id="fb-name" name="name" placeholder="Ваше ім’я" required>
+                    </div>
+                    <div class="row">
+                        <label for="fb-email">Email</label>
+                        <input type="email" id="fb-email" name="email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="row">
+                        <label for="fb-phone">Телефон</label>
+                        <input type="tel" id="fb-phone" name="phone" placeholder="+380 XX XXX XX XX">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Повідомлення</legend>
+                    <div class="row">
+                        <label for="fb-topic">Тема</label>
+                        <select id="fb-topic" name="topic">
+                            <option value="cooperation">Співпраця</option>
+                            <option value="project">Питання щодо проєкту</option>
+                            <option value="vacancy">Пропозиція роботи</option>
+                            <option value="other">Інше</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <span class="label">Зручний спосіб зв’язку</span>
+                        <span class="options">
+                            <label><input type="radio" name="contact" value="email" checked> Email</label>
+                            <label><input type="radio" name="contact" value="phone"> Телефон</label>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <label for="fb-message">Повідомлення</label>
+                        <textarea id="fb-message" name="message" rows="5" placeholder="Напишіть ваше повідомлення" required></textarea>
+                    </div>
+                    <div class="row">
+                        <span class="label"></span>
+                        <label><input type="checkbox" name="agree" required> Погоджуюсь на обробку даних</label>
+                    </div>
+                </fieldset>
+
+                <div class="actions">
+                    <button type="submit">Надіслати</button>
+                    <button type="reset" class="secondary">Очистити</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Ярослав Храбатин · Етап 3: таблиці та форми</p>
+    </footer>
+</body>
+</html>
