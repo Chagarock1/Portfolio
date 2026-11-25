@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.profession {
+    text-align: center;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+p {
+    text-align: justify;
+}
