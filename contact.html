@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти — MTB Bikes</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+  <!-- Шапка сайту -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">MTB <span>BIKES</span></div>
+      
+      <button class="burger" id="burger-btn" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="about.html">Про MTB</a></li>
+          <li><a href="contact.html" class="active">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основний блок -->
+  <main class="container">
+    <div class="section-title">
+      <h2>Контактна інформація</h2>
+      <p>Зв'яжіться з нашою веломайстернею для консультації чи ремонту</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Контакти -->
+      <section class="contact-card">
+        <h3>Клуб «MTB Bikes»</h3>
+        <p><strong>Адреса:</strong> м. Івано Франківськ, вул. Вочинецька 223</p>
+        <p><strong>Телефон:</strong> +380 (50) 123-45-67</p>
+        <p><strong>Електронна пошта:</strong> mtb-bikes@gmail.com</p>
+        <p><strong>Графік роботи:</strong> Вт–Нд: 10:00 — 19:00 (Пн: вихідний)</p>
+        <hr style="margin: 15px 0; border: none; border-top: 1px solid #eee;">
+        <h4>Наші послуги:</h4>
+        <ul class="simple-list" style="margin-top: 10px;">
+          <li>Обслуговування амортизаторів та вилок</li>
+          <li>Налаштування гідравлічних гальм</li>
+          <li>Збірка безкамерних коліс</li>
+        </ul>
+      </section>
+
+      <!-- Форма -->
+      <section class="contact-card">
+        <h3>Надіслати повідомлення</h3>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="user-name">Ім'я *</label>
+            <input type="text" id="user-name" class="form-input" placeholder="Ярослав" required>
+          </div>
+
+          <div class="form-group">
+            <label for="user-email">Email *</label>
+            <input type="email" id="user-email" class="form-input" placeholder="yaroslav@mail.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="bike-discipline">Цікавить дисципліна</label>
+            <select id="bike-discipline" class="form-input">
+              <option value="trail">Trail / All-Mountain</option>
+              <option value="enduro">Enduro</option>
+              <option value="downhill">Downhill</option>
+              <option value="xc">Cross-Country</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="user-message">Ваше запитання *</label>
+            <textarea id="user-message" class="form-input" placeholder="Напишіть ваше запитання..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn" style="width: 100%;">Відправити</button>
+          <div id="success-message" class="msg-success"></div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- Підвал -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 MTB Bikes. Навчальний проєкт з веброзробки.</p>
+      <p>Виконано для лабораторної роботи № 5-6.</p>
+    </div>
+  </footer>
+
+  <script src="static/js/main.js"></script>
+</body>
+</html>

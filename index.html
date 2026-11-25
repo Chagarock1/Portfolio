@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTB Bikes — Гірські велосипеди</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+  <!-- Шапка сайту -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">MTB <span>BIKES</span></div>
+      
+      <!-- Кнопка бургер-меню для телефонів -->
+      <button class="burger" id="burger-btn" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Навігація -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="active">Головна</a></li>
+          <li><a href="about.html">Про MTB</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Банер -->
+  <section class="hero">
+    <div class="container">
+      <h1>Світ гірських велосипедів та трейлів</h1>
+      <p>Огляд найкращих моделей для крос-кантрі, ендуро та даунхілу. Обирайте надійний байк для будь-яких гірських пригод.</p>
+      <a href="#bikes" class="btn">Каталог моделей</a>
+      <a href="about.html" class="btn btn-secondary">Дізнатися більше</a>
+    </div>
+  </section>
+
+  <!-- Основна секція з картками -->
+  <main class="container" id="bikes">
+    <div class="section-title">
+      <h2>Популярні моделі</h2>
+      <p>Фільтруйте за стилем катання</p>
+    </div>
+
+    <!-- Фільтрація -->
+    <div class="filter-group">
+      <button class="filter-btn active" data-filter="all">Всі</button>
+      <button class="filter-btn" data-filter="enduro">Enduro</button>
+      <button class="filter-btn" data-filter="downhill">Downhill</button>
+      <button class="filter-btn" data-filter="trail">Trail</button>
+      <button class="filter-btn" data-filter="xc">Cross-Country</button>
+    </div>
+
+    <!-- Сітка карток -->
+    <div class="cards-grid">
+      <!-- Картка 1: Enduro -->
+      <article class="card" data-category="enduro">
+        <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmiRWYbCvCEoj6QPbT5DSIXqJR0C29Amdr0DxGiw4_AxzlvWZrRH5W7V6Q&s=10" alt="Trek Slash 8">
+        <div class="card-content">
+          <span class="card-badge">Enduro</span>
+          <h3>Trek Slash 8</h3>
+          <p>Двопідвіс з ходом підвіски 170 мм для технічних та швидкісних спусків кам'янистими стежками.</p>
+          <div class="card-bottom">
+            <span class="price">135 000 ₴</span>
+            <button class="btn btn-small btn-details" data-title="Trek Slash 8" data-specs="Алюмінієва рама Alpha Platinum, вилка RockShox ZEB Select 170mm, 12 передач SRAM GX Eagle, вага 15.2 кг.">Детальніше</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Картка 2: Downhill -->
+      <article class="card" data-category="downhill">
+        <img class="card-img" src="https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKwSa2AIGbTGUOR9Tf8zxAuMUQ/94524-71_DEMO-RACE-PDRNDGO-BLKCP_HERO.webp?bg=f1f1f1&w=2000&h=1125&fit=fill&crop=focalpoint&q=75">
+        <div class="card-content">
+          <span class="card-badge">Downhill</span>
+          <h3>Specialized Demo Race</h3>
+          <p>Спеціалізований болід для швидкісного гірського спуску по трамплінах та камінню.</p>
+          <div class="card-bottom">
+            <span class="price">210 000 ₴</span>
+            <button class="btn btn-small btn-details" data-title="Specialized Demo Race" data-specs="Хід підвіски 200 мм з амортизаторами Öhlins DH38, гальма SRAM Code RSC, геометрія Mullet (29 перед / 27.5 зад).">Детальніше</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Картка 3: Trail -->
+      <article class="card" data-category="trail">
+        <img class="card-img" src="https://dma.canyon.com/image/upload/w_543,c_fit/b_rgb:F2F2F2/f_auto/q_auto/v1785483078/2027_FULL_spectral_5_4377_M178_P04_P5_29_dp7oub" alt="Canyon Spectral">
+        <div class="card-content">
+          <span class="card-badge">Trail</span>
+          <h3>Canyon Spectral 29</h3>
+          <p>Універсальний трейловий велосипед, який легко їде як вгору на підйоми, так і вниз.</p>
+          <div class="card-bottom">
+            <span class="price">112 000 ₴</span>
+            <button class="btn btn-small btn-details" data-title="Canyon Spectral 29" data-specs="Карбонова рама, хід підвіски 160/150 мм Fox 36, трансмісія Shimano SLX, вага 14.4 кг.">Детальніше</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Картка 4: Cross-Country -->
+      <article class="card" data-category="xc">
+        <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlGgLSTWPz24GtiM3FeMu7qxzZzrf8qCz_f2kUFV28uYZwSvVxTpsNsvs&s=10" alt="Scott Spark RC">
+        <div class="card-content">
+          <span class="card-badge">Cross-Country</span>
+          <h3>Scott Spark RC</h3>
+          <p>Легкий гоночний велосипед із вбудованим амортизатором для швидкої їзди лісом та марафонів.</p>
+          <div class="card-bottom">
+            <span class="price">160 000 ₴</span>
+            <button class="btn btn-small btn-details" data-title="Scott Spark RC" data-specs="Ультралегка рама Carbon HMX, інтегрований амортизатор 120 мм, вага всього 10.8 кг.">Детальніше</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Модальне вікно для перегляду характеристик -->
+  <div class="modal-overlay" id="details-modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close">&times;</button>
+      <h3 id="modal-title" style="margin-bottom: 10px; color: #2c3e50;">Характеристики</h3>
+      <p id="modal-text" style="color: #555; line-height: 1.5;"></p>
+      <div style="margin-top: 20px; text-align: right;">
+        <a href="contact.html" class="btn btn-small">Запитати про наявність</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Підвал -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 MTB Bikes. Навчальний проєкт з веброзробки.</p>
+      <p>Виконано для лабораторної роботи № 5-6.</p>
+    </div>
+  </footer>
+
+  <!-- Підключення JavaScript -->
+  <script src="static/js/main.js"></script>
+</body>
+</html>
